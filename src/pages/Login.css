@@ -1,0 +1,117 @@
+
+.auth-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #F5F0E1;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 38px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(41, 25, 20, 0.12);
+  position: relative;
+}
+
+.auth-card h2 {
+  color: #3F181C;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.auth-card > p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-card label {
+  color: #291914;
+  font-weight: 600;
+}
+
+.auth-card input {
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.auth-card input:focus {
+  border-color: #EA8D15;
+}
+
+.auth-card form button {
+  padding: 14px;
+  margin-top: 12px;
+  background: #3F181C;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-card form button:hover {
+  background: #EA8D15;
+}
+
+.auth-card form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: none;
+  font-size: 27px;
+  cursor: pointer;
+  color: #3F181C;
+}
+
+.auth-error {
+  color: #c62828;
+  font-size: 14px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+}
+
+.auth-switch span {
+  color: #EA8D15;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 28px 22px;
+  }
+}
+
+/* Fix Login page spacing below Navbar */
+.auth-page {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}

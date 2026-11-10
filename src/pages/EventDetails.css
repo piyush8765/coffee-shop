@@ -1,0 +1,533 @@
+
+/* =====================================
+   EVENT DETAILS PAGE
+===================================== */
+
+.event-details-page {
+  background: #F5F0E1;
+  color: #3F181C;
+  padding: 130px 7% 90px;
+  font-family: "Lora", Georgia, serif;
+  overflow: hidden;
+}
+
+.event-details-page * {
+  box-sizing: border-box;
+}
+
+/* Breadcrumb */
+
+.event-details-breadcrumb {
+  max-width: 1250px;
+  margin: 0 auto 35px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: #9B8275;
+}
+
+.event-details-breadcrumb a {
+  color: #78645B;
+  text-decoration: none;
+}
+
+.event-details-breadcrumb a:hover {
+  color: #EA8D15;
+}
+
+.event-details-breadcrumb span:last-child {
+  color: #EA8D15;
+}
+
+/* Hero */
+
+.event-details-hero {
+  max-width: 1250px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.event-details-image {
+  height: 480px;
+  position: relative;
+}
+
+.event-details-image::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 75%;
+  height: 75%;
+  border: 2px solid #EA8D15;
+}
+
+.event-details-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+.event-details-category {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background: #EA8D15;
+  color: #3F181C;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.event-details-eyebrow {
+  color: #EA8D15;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.event-details-intro h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.15;
+  margin: 20px 0;
+}
+
+.event-details-intro > p {
+  color: #78645B;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.event-details-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin: 28px 0;
+  padding: 25px 0;
+  border-top: 1px solid #E2D7C9;
+  border-bottom: 1px solid #E2D7C9;
+}
+
+.event-details-meta div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #78645B;
+  font-size: 13px;
+}
+
+.event-details-meta svg {
+  color: #EA8D15;
+}
+
+.event-details-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.event-details-price > div span {
+  color: #9B8275;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.event-details-price h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 25px;
+  margin: 8px 0 0;
+}
+
+.event-booking-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 16px 20px;
+  background: #3F181C;
+  color: #F5F0E1;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.event-booking-btn:hover {
+  background: #EA8D15;
+  color: #3F181C;
+  transform: translateY(-3px);
+}
+
+/* Main Content */
+
+.event-details-content {
+  max-width: 1250px;
+  margin: 0 auto 110px;
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.event-about h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 38px;
+  margin: 18px 0;
+}
+
+.event-about h2 em,
+.related-events-heading h2 em {
+  color: #EA8D15;
+  font-weight: 500;
+}
+
+.event-about > p {
+  color: #78645B;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.event-includes {
+  margin-top: 40px;
+}
+
+.event-includes h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.event-includes div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 18px;
+  color: #78645B;
+  font-size: 13px;
+}
+
+.event-includes svg {
+  color: #EA8D15;
+}
+
+/* Booking Card */
+
+.event-booking-card {
+  background: #3F181C;
+  color: #F5F0E1;
+  padding: 35px;
+  box-shadow: 0 12px 30px rgba(63, 24, 28, 0.12);
+}
+
+.event-booking-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #F5F0E1;
+  color: #EA8D15;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+.event-booking-card > span {
+  color: #EA8D15;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.event-booking-card h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 27px;
+  line-height: 1.3;
+  margin: 15px 0 25px;
+}
+
+.event-booking-info {
+  border-top: 1px solid rgba(245, 240, 225, 0.2);
+  border-bottom: 1px solid rgba(245, 240, 225, 0.2);
+  padding: 22px 0;
+  margin-bottom: 25px;
+}
+
+.event-booking-info p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #D0C2B6;
+  font-size: 12px;
+  margin: 0 0 17px;
+}
+
+.event-booking-info p:last-child {
+  margin-bottom: 0;
+}
+
+.event-booking-info svg {
+  color: #EA8D15;
+}
+
+.event-booking-card .event-booking-btn {
+  width: 100%;
+  background: #EA8D15;
+  color: #3F181C;
+}
+
+.event-booking-card .event-booking-btn:hover {
+  background: #F5F0E1;
+}
+
+.event-booking-card small {
+  display: block;
+  color: #BCAEA3;
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 18px;
+  text-align: center;
+}
+
+/* Related Events */
+
+.related-events {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.related-events-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.related-events-heading h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.related-events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.related-event-card {
+  background: #FFFFFF;
+  overflow: hidden;
+  text-decoration: none;
+  color: #3F181C;
+  transition: 0.35s ease;
+}
+
+.related-event-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(63, 24, 28, 0.12);
+}
+
+.related-event-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.related-event-card > div {
+  padding: 22px;
+}
+
+.related-event-card span {
+  color: #EA8D15;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.related-event-card h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  margin: 12px 0;
+}
+
+.related-event-card p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #78645B;
+  font-size: 11px;
+}
+
+.related-event-card p svg {
+  color: #EA8D15;
+}
+
+.back-events-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  margin: 45px auto 0;
+  padding: 15px 22px;
+  background: #3F181C;
+  color: #F5F0E1;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.back-events-link:hover {
+  background: #EA8D15;
+  color: #3F181C;
+}
+
+/* Not Found */
+
+.event-not-found {
+  min-height: 65vh;
+  background: #F5F0E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  color: #3F181C;
+  text-align: center;
+}
+
+.event-not-found h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 38px;
+}
+
+.event-not-found p {
+  color: #78645B;
+}
+
+.event-not-found a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #3F181C;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 14px 20px;
+  margin-top: 15px;
+}
+
+/* Tablet */
+
+@media (max-width: 950px) {
+  .event-details-page {
+    padding: 110px 5% 80px;
+  }
+
+  .event-details-hero {
+    gap: 35px;
+  }
+
+  .event-details-image {
+    height: 390px;
+  }
+
+  .event-details-content {
+    gap: 35px;
+  }
+
+  .event-booking-card {
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .event-details-page {
+    padding: 90px 6% 70px;
+  }
+
+  .event-details-breadcrumb {
+    font-size: 10px;
+    gap: 8px;
+  }
+
+  .event-details-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 75px;
+  }
+
+  .event-details-image {
+    height: 290px;
+    margin: 0 10px;
+  }
+
+  .event-details-intro h1 {
+    font-size: 39px;
+  }
+
+  .event-details-intro > p {
+    font-size: 13px;
+  }
+
+  .event-details-price {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .event-details-price .event-booking-btn {
+    width: 100%;
+  }
+
+  .event-details-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .event-about h2 {
+    font-size: 31px;
+  }
+
+  .event-booking-card {
+    padding: 28px 23px;
+  }
+
+  .related-events-heading h2 {
+    font-size: 33px;
+  }
+
+  .related-events-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .related-event-card img {
+    height: 220px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .event-booking-btn,
+  .related-event-card,
+  .back-events-link {
+    transition: none;
+  }
+}

@@ -1,0 +1,328 @@
+
+.why-choose {
+  position: relative;
+  padding: 110px 7%;
+  background: #3F181C;
+  color: #F5F0E1;
+  overflow: hidden;
+  font-family: "Lora", Georgia, serif;
+}
+
+.why-container {
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* Heading */
+
+.why-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.why-label {
+  color: #EA8D15;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.why-heading h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.2;
+  margin: 22px 0;
+  color: #F5F0E1;
+}
+
+.why-heading h2 em {
+  color: #EA8D15;
+  font-weight: 500;
+}
+
+.why-heading p {
+  color: #D7C5B8;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 520px;
+  margin: auto;
+}
+
+/* Feature Grid */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.why-card {
+  position: relative;
+  min-height: 290px;
+  padding: 30px 25px;
+  background: rgba(245, 240, 225, 0.055);
+  border: 1px solid rgba(245, 240, 225, 0.14);
+  border-radius: 5px;
+  transition: all 0.35s ease;
+}
+
+.why-card:hover {
+  background: #F5F0E1;
+  transform: translateY(-8px);
+  border-color: #EA8D15;
+}
+
+.why-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.why-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  background: rgba(234, 141, 21, 0.13);
+  color: #EA8D15;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: all 0.35s ease;
+}
+
+.why-number {
+  color: rgba(245, 240, 225, 0.4);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.why-card h3 {
+  color: #F5F0E1;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 21px;
+  margin: 0 0 14px;
+  transition: color 0.35s ease;
+}
+
+.why-card p {
+  color: #D7C5B8;
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 0;
+  transition: color 0.35s ease;
+}
+
+.why-card-line {
+  width: 35px;
+  height: 2px;
+  background: #EA8D15;
+  margin-top: 25px;
+  transition: width 0.35s ease;
+}
+
+/* Hover Effects */
+
+.why-card:hover .why-icon {
+  background: #3F181C;
+  color: #EA8D15;
+}
+
+.why-card:hover h3 {
+  color: #3F181C;
+}
+
+.why-card:hover p {
+  color: #78645B;
+}
+
+.why-card:hover .why-number {
+  color: #B7A89A;
+}
+
+.why-card:hover .why-card-line {
+  width: 65px;
+}
+
+/* Bottom CTA */
+
+.why-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 75px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(245, 240, 225, 0.2);
+}
+
+.why-bottom-text span {
+  color: #EA8D15;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.why-bottom-text h3 {
+  color: #F5F0E1;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(21px, 3vw, 29px);
+  margin: 12px 0 0;
+}
+
+.why-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 22px;
+  background: #EA8D15;
+  color: #3F181C;
+  text-decoration: none;
+  font-family: "Lora", Georgia, serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.why-button:hover {
+  background: #F5F0E1;
+  transform: translateY(-3px);
+}
+
+.why-button span {
+  font-size: 18px;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-card {
+    min-height: 270px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .why-choose {
+    padding: 75px 6%;
+  }
+
+  .why-heading {
+    margin-bottom: 40px;
+  }
+
+  .why-heading h2 {
+    font-size: 36px;
+  }
+
+  .why-heading p {
+    font-size: 14px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .why-card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .why-card-top {
+    margin-bottom: 25px;
+  }
+
+  .why-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 45px;
+  }
+
+  .why-button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+/* WHY CHOOSE US - UI POLISH */
+
+/* Section spacing and heading */
+.why-heading h2 {
+  letter-spacing: -0.8px;
+}
+
+.why-heading p {
+  max-width: 560px;
+}
+
+/* Feature cards */
+.why-card {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.why-card:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Icons */
+.why-icon {
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.why-card:hover .why-icon {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+/* Card heading */
+.why-card h3 {
+  letter-spacing: 0.2px;
+}
+
+/* Bottom CTA */
+.why-bottom {
+  border-top-color: rgba(245, 240, 225, 0.25);
+}
+
+.why-button {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.why-button:hover {
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.18);
+}
+
+/* Responsive polish */
+@media (max-width: 600px) {
+  .why-card:hover {
+    transform: none;
+  }
+
+  .why-card:active {
+    transform: scale(0.98);
+  }
+
+  .why-bottom {
+    gap: 22px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .why-card,
+  .why-icon,
+  .why-button {
+    transition: none;
+  }
+}

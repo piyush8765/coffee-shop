@@ -1,0 +1,52 @@
+
+/* =================================
+   APP GLOBAL LAYOUT
+================================= */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Main Website Content */
+
+main {
+  width: 100%;
+  display: block;
+}
+
+/* Common Section */
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+/* Smooth Section Transitions */
+
+section img {
+  max-width: 100%;
+}
+
+/* Remove unwanted button defaults */
+
+button {
+  border: none;
+  outline: none;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 768px) {
+  .app {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+}
+
